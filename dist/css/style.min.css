@@ -620,6 +620,9 @@ Other
 .check-list.check-green li::before {
   background: url(../img/icons/icon-check-green.svg) center/contain no-repeat;
 }
+.check-list.check-white li::before {
+  background: url(../img/icons/icon-check-white.svg) center/contain no-repeat;
+}
 
 .header {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1019607843);
@@ -2680,6 +2683,10 @@ Home
   margin: 34px auto 0;
 }
 
+.main__history {
+  margin: 70px 0;
+}
+
 .main__history-container {
   background: url("../img/svg/main__history-bg.svg"), linear-gradient(180deg, #cfe1fb 0%, #bdd4f4 100%);
   padding: 40px;
@@ -2869,6 +2876,10 @@ Home
 
 .main__faq-accordion.active {
   transform: rotate(45deg);
+}
+
+.main__faq-content {
+  max-width: calc(100% - 70px);
 }
 
 .main__faq-btn {
@@ -4073,7 +4084,7 @@ Intro
   font-family: InterTight;
   font-size: 58px;
   font-weight: 700;
-  line-height: 97%;
+  line-height: 110%;
   letter-spacing: -0.01em;
   color: #0f2e59;
   margin-bottom: 38px;
@@ -4103,6 +4114,7 @@ Intro
   line-height: 149%;
   letter-spacing: -0.04em;
   margin-bottom: 20px;
+  align-items: center;
 }
 .intro-card__buttons {
   display: flex;
@@ -4133,6 +4145,11 @@ Intro
   position: absolute;
   bottom: 0;
   right: 0;
+}
+.intro-card__bgicon-2 {
+  position: absolute;
+  top: 60px;
+  right: 40%;
 }
 
 /*==========================================================================
@@ -4208,6 +4225,12 @@ First month
   background: var(--color-secondary);
   color: #fff;
   margin-bottom: 26px;
+}
+.first-month__card-num.--coral {
+  background: var(--color-primary);
+}
+.first-month__card-num.--blue {
+  background: var(--color-tertiary);
 }
 .first-month__card-name {
   font-family: InterTight;
@@ -4982,7 +5005,7 @@ Fonds
 Request
 ============================================================================*/
 .request {
-  margin: 70px 0;
+  margin: 70px 0 0;
   position: relative;
 }
 .request::after {
@@ -5079,6 +5102,7 @@ Request
   height: 14px;
 }
 .request__input, .request__textarea {
+  width: 100%;
   height: 58px;
   background: none;
   padding: 16px 25px 16px 45px;
@@ -5108,4 +5132,296 @@ Request
   line-height: 140%;
   color: rgba(0, 0, 0, 0.3);
   text-wrap: balance;
+}
+.request__qoute {
+  background: #fff;
+  border-radius: 40px;
+  overflow: hidden;
+  box-shadow: 0 51px 172px -27px rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(88px);
+  position: absolute;
+  top: 90px;
+  right: 5%;
+  max-width: 303px;
+}
+.request__qoute-head {
+  padding: 36px 30px 10px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  color: #82868d;
+  font-weight: 600;
+  font-size: 20px;
+  letter-spacing: -0.04em;
+  line-height: 137%;
+}
+.request__qoute-icon {
+  margin-bottom: 10px;
+}
+.request__qoute-text {
+  padding: 36px 30px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 137%;
+  letter-spacing: -0.04em;
+  font-style: italic;
+}
+
+/*==========================================================================
+Studienkolleg
+============================================================================*/
+.intro.--service .intro__image {
+  right: -40px;
+}
+.intro.--service .intro-card__flex {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 149%;
+  letter-spacing: -0.04em;
+  max-width: unset;
+  margin-bottom: 28px;
+}
+.intro.--service .intro-card__text {
+  font-weight: 600;
+  text-wrap: balance;
+}
+
+/*==========================================================================
+Instruments
+============================================================================*/
+.first-month.--instruments .first-month__cards {
+  grid-template-columns: 1fr 1fr 1fr;
+  max-width: 1090px;
+  z-index: 5;
+  position: relative;
+}
+.first-month.--instruments .first-month__card {
+  grid-column: span 1;
+}
+.first-month.--instruments .first-month__card-bg {
+  z-index: -1;
+  left: 70%;
+}
+.first-month.--instruments .first-month__icon {
+  right: 0;
+}
+
+/*==========================================================================
+Conducting
+============================================================================*/
+.conducting {
+  margin: 70px 0;
+}
+.conducting__card {
+  margin-bottom: 14px;
+  border-radius: 40px;
+  background: #e5e5e5;
+  overflow: hidden;
+  position: relative;
+  padding: 40px;
+}
+.conducting__card:last-child {
+  background: #cbead6;
+  margin-bottom: 0;
+}
+.conducting__card:nth-child(2) .conducting__card-icon {
+  right: -60px;
+  transform: rotate(-30deg);
+}
+.conducting__card:nth-child(3) .conducting__card-icon {
+  transform: rotate(-30deg);
+  right: 5%;
+}
+.conducting__card:nth-child(4) .conducting__card-icon {
+  transform: rotate(43.8deg);
+  right: 15%;
+}
+.conducting__card:nth-child(5) .conducting__card-icon {
+  transform: rotate(-30deg);
+  right: -20px;
+  top: 20%;
+}
+.conducting__card-num {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1;
+  color: #fff;
+  background: var(--color-secondary);
+  border-radius: 14px;
+  margin-bottom: 14px;
+}
+.conducting__card-title {
+  font-size: 34px;
+  font-weight: 600;
+  font-family: InterTight;
+  line-height: 138%;
+  margin-bottom: 20px;
+  letter-spacing: -0.01em;
+}
+.conducting__card-text {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  font-size: 500px;
+  font-size: 18px;
+  line-height: 131%;
+  letter-spacing: -0.04em;
+  max-width: 700px;
+  text-wrap: balance;
+}
+.conducting__card-text svg {
+  margin-top: 4px;
+  width: 12px;
+  height: 12px;
+  color: var(--color-secondary);
+}
+.conducting__card-icon {
+  position: absolute;
+  transform: rotate(22deg);
+  right: 10%;
+  top: 15%;
+}
+
+/*==========================================================================
+Price
+============================================================================*/
+.price {
+  margin: 70px 0;
+}
+.price__title {
+  margin-bottom: 14px;
+}
+.price__subtitle {
+  max-width: 542px;
+  text-align: center;
+  margin-bottom: 34px;
+  font-size: 17px;
+  line-height: 143%;
+  font-weight: 500;
+  letter-spacing: -0.04em;
+  margin-inline: auto;
+}
+.price__button {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+.price__tariffs {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+}
+.price__tariff {
+  flex: 0 1 25%;
+  border-radius: 28px;
+  overflow: hidden;
+  background: var(--color-tertiary);
+  color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+.price__tariff:nth-child(2) {
+  background: #ebf0f8;
+  color: #0e2443;
+}
+.price__tariff:nth-child(2) .price__tariff-head,
+.price__tariff:nth-child(2) .price__tariff-price {
+  border-color: rgba(14, 36, 67, 0.1);
+}
+.price__tariff:nth-child(2) .price__tariff-desc {
+  color: #3f4f5d;
+}
+.price__tariff:nth-child(3) {
+  background: #cbead6;
+  color: #0e2443;
+}
+.price__tariff:nth-child(3) .price__tariff-head,
+.price__tariff:nth-child(3) .price__tariff-price {
+  border-color: rgba(14, 36, 67, 0.1);
+}
+.price__tariff:nth-child(3) .price__tariff-price {
+  color: var(--color-secondary);
+}
+.price__tariff:nth-child(3) .price__tariff-desc {
+  color: #3f4f5d;
+}
+.price__tariff:nth-child(4) {
+  background: #ffe9e5;
+  color: #0e2443;
+}
+.price__tariff:nth-child(4) .price__tariff-head,
+.price__tariff:nth-child(4) .price__tariff-price {
+  border-color: rgba(14, 36, 67, 0.1);
+}
+.price__tariff:nth-child(4) .price__tariff-price {
+  color: var(--color-primary);
+}
+.price__tariff:nth-child(4) .price__tariff-desc {
+  color: #3f4f5d;
+}
+.price__tariff-head {
+  padding: 26px 26px 14px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.price__tariff-name {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 133%;
+  letter-spacing: -0.02em;
+  margin-bottom: 4px;
+}
+.price__tariff-desc {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 132%;
+  letter-spacing: -0.02em;
+  color: rgba(255, 255, 255, 0.6);
+}
+.price__tariff-price {
+  padding: 14px 26px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 133%;
+  letter-spacing: -0.02em;
+}
+.price__tariff-text {
+  padding: 14px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 145%;
+  letter-spacing: -0.02em;
+}
+.price__tariff-text ul {
+  margin-inline: 10px;
+}
+.price__tariff-btn {
+  margin-top: 32px;
+  width: 100%;
+}
+.price__tariff-btn .btn-primary {
+  width: 100%;
+  border-radius: 14px;
+}
+
+/*==========================================================================
+Guarantee
+============================================================================*/
+.first-month.--guarantee .first-month__cards {
+  grid-template-columns: repeat(6, 1fr);
+}
+.first-month.--guarantee .first-month__card:nth-child(2), .first-month.--guarantee .first-month__card:nth-child(3) {
+  grid-column: span 2;
+}
+.first-month.--guarantee .first-month__card:nth-child(4) {
+  grid-column: span 3;
+}
+.first-month.--guarantee .first-month__icon {
+  right: -10%;
+  bottom: -5%;
 }
